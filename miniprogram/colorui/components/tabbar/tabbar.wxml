@@ -1,0 +1,6 @@
+<view class="box">
+    <navigator class="icon_box"  url="{{item.url}}" wx:for="{{icon}}" wx:key="{{item}}">
+      <image class="icon" src="{{item.img}}"></image>
+      <text class="text">{{item.name}}</text>
+    </navigator>
+</view>

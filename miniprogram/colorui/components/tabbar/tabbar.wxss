@@ -1,0 +1,32 @@
+/* colorui/components/cu-custom.wxss */
+.box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #321E90 0%, #2F1A90 0%, #22106F 21%, #17013C 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx 0;
+}
+
+.icon_box {
+    flex: 1;
+    height: 88rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 44rpx;
+    height: 44rpx;
+    display: flex;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 20rpx;
+    margin-top: 5rpx;
+}
