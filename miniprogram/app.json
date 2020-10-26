@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/found/index",
     "pages/mine/index",
+    "pages/2048/2048",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

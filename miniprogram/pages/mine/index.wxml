@@ -1,6 +1,21 @@
-<!--pages/mine/index.wxml-->
+<!-- pages/mine/index.wxml -->
 <cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
-	<!-- <view slot="backText">返回</view> -->
-	<view slot="content">个人主页</view>
+    <!-- <view slot="backText">返回</view> -->
+    <view slot="content">个人主页</view>
 </cu-custom>
+<view class="container">
+    <!-- 用户 openid -->
+    <view class="userinfo">
+        <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{userInfo.avatar}})" size="default"></button>
+        <view class="userinfo-nickname-wrapper">
+            <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+        </view>
+    </view>
+
+    <view class="box" hover-class="none" hover-stop-propagation="false">
+        <text class="text" selectable="false" space="false" decode="false">
+            暂无内容
+        </text>
+    </view>
+</view>
 <tabbar tabIndex="{{2}}"></tabbar>

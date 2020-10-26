@@ -8,7 +8,8 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    pagesData:{}
   },
   onLoad: function () {
     if (!wx.cloud) {
@@ -41,39 +42,24 @@ Page({
     api.apiQuery({
       name: "query",
       data: {
-        query: 'happy_h5',
+        query: 'pages_index',
         where: {
-          OpenType: true
+          query: "index"
         }
       }
     },
     res => {
-      console.log(res)
-    })
-  },
-  onGetUserInfo: function (e) {
-    if (!this.data.logged && e.detail.userInfo) {
-      this.setData({
-        logged: true,
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        userInfo: e.detail.userInfo
+      console.log(res.result.data[0])
+      that.setData({
+        pagesData:res.result.data[0]
       })
-    }
-  },
-  onGetOpenid: function () {
-    // 调用云函数
-    api.apiQuery({
-      name: "login",
-      data: {
-        query: 'user',
-        where: {
-          name: '李普青'
-        }
-      }
-    },
-    res => {
-      app.globalData.openid = res.result.openid;
-      this.setData({userInfo:res.result.data[0]})
+      // app.globalData.openid = res.result.openid;
+      // this.setData({userInfo:res.result.data[0]})
     })
-  }
+  },
+  jump(){
+    wx.navigateTo({
+      url: '/pages/2048/2048',
+    })
+  },
 })

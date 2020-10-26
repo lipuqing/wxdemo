@@ -1,12 +1,12 @@
 /* colorui/components/cu-custom.wxss */
-.box {
+.tabbox {
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
     /* background: linear-gradient(90deg, #321E90 0%, #2F1A90 0%, #22106F 21%, #17013C 100%); */
     /* background: linear-gradient(-30deg, #00ce91 0%, #006d5b 100%); */
-    background: linear-gradient(180deg, #fff8ea 0%, rgba(255, 248, 234, 0) 100%);
+    background: linear-gradient(180deg, #fff8ea 0%, rgba(255, 248, 234, 0.979) 100%);
     color: #fff;
     display: flex;
     flex-direction: row;

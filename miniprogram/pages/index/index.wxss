@@ -16,6 +16,30 @@
   padding-left: 120rpx;
 }
 
+.jump{
+  width: 200rpx;
+  height: 60rpx;
+  background: linear-gradient(180deg, #ffead0 0%, #ffcea8 100%);
+  line-height: 60rpx;
+  padding: 10rpx;
+  border-radius: 500rpx;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-top: 60rpx;
+}
+.j_text{
+  width: 100%;
+  height: 100%;
+  font-size: 26rpx;
+  color: rgba(255, 0, 0, 0.575);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .userinfo-avatar {
   width: 100rpx;
   height: 100rpx;
