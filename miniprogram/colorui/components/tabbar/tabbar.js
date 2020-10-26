@@ -48,17 +48,19 @@ Component({
       img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_nofound.png?sign=e65f6596ace68dc9df08046226bb113a&t=1603684202',
       curr_img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_found.png?sign=c825adbcffa439fa0e3fb2e091496492&t=1603684219',
       name: '发现',
-      url: '/pages/index/index'
-    }, {
-      img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_nofound.png?sign=e65f6596ace68dc9df08046226bb113a&t=1603684202',
-      curr_img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_found.png?sign=c825adbcffa439fa0e3fb2e091496492&t=1603684219',
-      name: '发现',
-      url: '/pages/index/index'
-    }, {
+      url: '/pages/found/index'
+    }, 
+    // {
+    //   img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_nofound.png?sign=e65f6596ace68dc9df08046226bb113a&t=1603684202',
+    //   curr_img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_found.png?sign=c825adbcffa439fa0e3fb2e091496492&t=1603684219',
+    //   name: '发现',
+    //   url: '/pages/found/index'
+    // }, 
+    {
       img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_nomine.png?sign=a460593dbf5d6b1daecf02fa68a6bfd7&t=1603334426',
       curr_img: 'https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/icon/icon_mine.png?sign=cc55a7c353d27bf5fb12082a199fad45&t=1603684179',
       name: '我的',
-      url: '/pages/index/index'
+      url: '/pages/mine/index'
     }, ]
   },
   onShow(){

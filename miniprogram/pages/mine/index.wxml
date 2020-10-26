@@ -1,0 +1,6 @@
+<!--pages/mine/index.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+	<!-- <view slot="backText">返回</view> -->
+	<view slot="content">个人主页</view>
+</cu-custom>
+<tabbar tabIndex="{{2}}"></tabbar>

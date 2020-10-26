@@ -1,0 +1,6 @@
+<!--pages/found/index.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+	<!-- <view slot="backText">返回</view> -->
+	<view slot="content">发现</view>
+</cu-custom>
+<tabbar tabIndex="{{1}}"></tabbar>

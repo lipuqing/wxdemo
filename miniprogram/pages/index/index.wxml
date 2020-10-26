@@ -1,7 +1,7 @@
 <!--index.wxml-->
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-	<view slot="backText">返回</view>
-	<view slot="content">表单</view>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+	<!-- <view slot="backText">返回</view> -->
+	<view slot="content">SeanLive</view>
 </cu-custom>
 <view class="container">
   <!-- 用户 openid -->
