@@ -3,5 +3,5 @@
 	<!-- <view slot="backText">返回</view> -->
 	<view slot="content">发现</view>
 </cu-custom>
-<web-view src="https://6474-dtf1v1-c6f838-1255670685.tcb.qcloud.la/h5/Choir.html?sign=dc57f2401a1dfbbb63a67549463d0c5e&t=1603692923" bindmessage=""></web-view>
+<web-view src="{{url}}" bindmessage=""></web-view>
 <tabbar tabIndex="{{1}}"></tabbar>

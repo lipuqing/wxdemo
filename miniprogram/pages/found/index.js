@@ -1,11 +1,13 @@
 // pages/found/index.js
+const app = getApp()
+const api = require("../../common/api.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    url:{}
   },
 
   /**
@@ -27,6 +29,20 @@ Page({
    */
   onShow: function () {
 
+    let that = this
+    api.apiQuery({
+        name: "query",
+        data: {
+          query: 'happy_h5',
+          where: {
+            OpenType: true
+          }
+        }
+      },
+      res => {
+        console.log(res.result.data[0])
+        that.setData({url:res.result.data[0].link})
+      })
   },
 
   /**

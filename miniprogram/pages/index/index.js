@@ -39,17 +39,16 @@ Page({
     // 调用云函数
     let that = this 
     api.apiQuery({
-      name: "login",
+      name: "query",
       data: {
-        query: 'user',
+        query: 'happy_h5',
         where: {
-          name: '李普青'
+          OpenType: true
         }
       }
     },
     res => {
-      app.globalData.openid = res.result.openid;
-      that.setData({userInfo:res.result.data[0]})
+      console.log(res)
     })
   },
   onGetUserInfo: function (e) {
