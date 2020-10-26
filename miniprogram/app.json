@@ -17,8 +17,8 @@
     "pages/im/room/room"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#39b54a",
-    "navigationBarTitleText": "Color UI",
+    "navigationBarBackgroundColor": "#475466",
+    "navigationBarTitleText": "Sean live",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
