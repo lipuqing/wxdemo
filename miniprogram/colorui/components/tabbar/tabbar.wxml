@@ -1,6 +1,6 @@
 <view class="box">
-    <navigator class="icon_box"  url="{{item.url}}" wx:for="{{icon}}" wx:key="{{item}}">
-      <image class="icon" src="{{item.img}}"></image>
-      <text class="text">{{item.name}}</text>
+    <navigator class="icon_box" open-type="reLaunch"  url="{{item.url}}" wx:for="{{icon}}" wx:key="{{item}}">
+      <image class="icon" src="{{index==tabIndex?item.curr_img:item.img}}"></image>
+      <text class="text" style="{{index==tabIndex?'color: #5b3609;':''}}">{{item.name}}</text>
     </navigator>
 </view>

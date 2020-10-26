@@ -4,7 +4,6 @@
 	<view slot="content">表单</view>
 </cu-custom>
 <view class="container">
-
   <!-- 用户 openid -->
   <view class="userinfo">
     <button 
@@ -61,4 +60,4 @@
  -->
 
 </view>
-<tabbar></tabbar>
+<tabbar tabIndex="{{0}}"></tabbar>

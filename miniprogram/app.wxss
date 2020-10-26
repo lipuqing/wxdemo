@@ -105,3 +105,8 @@
 .text-light {
   font-weight: 300;
 }
+page{
+  /* background: linear-gradient(120deg, #fff8ea 0%, rgba(255, 248, 234, 0) 100%); */
+  background: #fff;
+  height: 100vh;
+}
